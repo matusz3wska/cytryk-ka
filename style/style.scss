@@ -1,0 +1,138 @@
+$yellow1: #FFF7CC;
+$yellow2: #FFE145;
+$yellow3: #B79C10;
+
+$grey1: #F2F4FA;
+$grey2: #D4D7E5;
+$grey3: #9093A6;
+$grey4: #3F4255;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 64px;
+    letter-spacing: 5%;
+    color: $grey4;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 8%;
+    color: $grey4;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $grey4;
+}
+
+p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: $grey4;
+}
+
+p.small{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey4;
+}
+
+button.yellow{
+    background-color: $yellow2;
+    color: $yellow3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border: none;
+    padding: 26px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+        background-color: $yellow1;
+    }
+    &.disabled{
+        opacity: 40%;
+        cursor: not-allowed;
+        &:hover{
+            background-color: $yellow2;
+        }
+    }
+}
+
+button.grey{
+    height: 48px;
+    background-color: $grey1;
+    color: $grey3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover{
+        background-color: $grey2;
+        color: $grey4;
+    }
+    &.disabled{
+        opacity: 40%;
+        cursor: not-allowed;
+        &:hover{
+            background-color: $grey1;
+        }
+    }
+}
+
+button.arrow{
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+    background-image: url('hamburger.svg');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    &.disabled{
+        opacity: 40%;
+        &:hover{
+            box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+        }
+    }
+}
+
+@import '_nav.scss';
+@import "_mainsection.scss";
+@import "_restauracje.scss";
+@import "_kontakt.scss";
+@import "_spec.scss";
+@import "_cytrynki.scss";
+@import "_mapka.scss";
+@import "_insta.scss";
+@import "_footer.scss";

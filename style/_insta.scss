@@ -1,0 +1,17 @@
+.insta{
+    max-width: 1000px;
+    margin: 0 auto;
+    .instabox{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    h2{
+        span{
+            color: $grey3;
+        }
+    }
+}

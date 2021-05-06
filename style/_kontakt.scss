@@ -1,0 +1,32 @@
+.kontakt{
+    background-color: $grey1;
+    margin-top: 100px;
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 0px;
+    .tekst{
+        margin-top: 0;
+    }
+
+form{
+    input{
+        width: 336px;
+        height: 72px;
+        background-color: white;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+        padding: 24px 16px 24px 48px;
+        box-sizing: border-box;
+    }
+    button{
+        width: 88px;
+        height: 72px;
+    }
+}
+}
+}

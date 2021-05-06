@@ -1,0 +1,24 @@
+.restauracje{
+    max-width: 1000px;
+    margin: 0 auto;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+            filter: drop-shadow(0px 2px 16px rgba (60,62,74,0.08));
+            img{
+                overflow: hidden;
+            }
+        }
+    }
+
+}
